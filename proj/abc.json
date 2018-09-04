@@ -1,0 +1,18 @@
+{
+    "name": "<%- name %>",
+    "options": {
+      "type": "initx",
+      "template": "<%- template %>",
+      "npm": "<%- npm %>",
+      "vars": {
+        <% if (i18n) { %>"locale": "zh-cn",
+        <% } %>"__LOCAL__": true
+      },
+      "buildvars": {
+        "__LOCAL__": [false]<% if (i18n) { %>,
+        "locale": [ "zh-cn", "en" ]<% } %>
+      },
+      "pages": <%= !SPA %>
+    }
+  }
+  
