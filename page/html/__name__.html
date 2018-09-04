@@ -6,7 +6,7 @@
 
 <!-- 项目样式资源加载 -->
 <link rel="stylesheet" href="/app.css">
-<% if (!SPA) { %><link rel="stylesheet" href="/home.css"><% } %>
+<link rel="stylesheet" href="/<%= name %><%= suffix %>.css">
 
 <!-- 外部脚本资源加载 -->
 <!--[if lte IE 9]>
@@ -15,11 +15,11 @@
 <script src="//g.alicdn.com/platform/c/??jquery/1.11.3/dist/jquery.min.js,lodash/3.10.1/lodash.min.js,react/0.14.2/react-with-addons.min.js,react/0.14.2/react-dom.min.js,lie/3.0.2/dist/lie.polyfill.min.js,reflux/5.0.4/dist/reflux.min.js,natty-storage/1.1.1/dist/natty-storage.min.js,natty-fetch/2.2.0/dist/natty-fetch.pc.min.js"></script>
 
 </head>
-<body<% if (i18n) { %> class="zh-cn"<% } %>>
+<body>
 <div id="App"></div>
 
 <!-- 项目脚本资源加载 -->
-<script src="/app<% if (i18n) { %>-zh-cn<% } %>.js"></script>
-<% if (!SPA) { %><script src="/home<% if (i18n) { %>-zh-cn<% } %>.js"></script><% } %>
+<script src="/app<%= suffix %>.js"></script>
+<script src="/<%= name %><%= suffix %>.js"></script>
 </body>
 </html>
