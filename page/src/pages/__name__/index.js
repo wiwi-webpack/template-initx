@@ -4,7 +4,7 @@ export default {
     title: '<%- name %>',
     getComponent(nextState, cb) {
     require.ensure([], (require) => {
-        cb(null, require('./Page<%- Name %>'));
+        cb(null, require('./Page<%- Name %>.jsx'));
     }, '<%- name %>');
     },
 };<%}else{%>

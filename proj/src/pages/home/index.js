@@ -4,7 +4,7 @@ export default {
     title: 'home',
     getComponent(nextState, cb) {
         require.ensure([], (require) => {
-            cb(null, require('./PageHome'));
+            cb(null, require('./PageHome.jsx'));
         }, 'home');
     },
 };<%}else{%>
