@@ -8,8 +8,8 @@
       "url": "<%- repository %>"
     },
     "scripts": {
-      "start": "webpack-dev-server -d --hot --open",
-      "build": "webpack -p"
+      "start": "wiwi server",
+      "build": "wiwi build"
     },
     "homepage": "<%- homepage %>",
     "license": "MIT",
